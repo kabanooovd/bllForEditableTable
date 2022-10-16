@@ -33,17 +33,6 @@ export const EditMode = ({ editModeList, setProperties, tableHeaders }) => {
             const onCheckNull = (val) => val ? val : ""
             return (
               <tr key={id}>
-                {/* <td><input name={'name'} value={`${name}`} onChange={onChange} /></td>
-                <td><input name={'title'} value={`${title}`} onChange={onChange} /></td>
-                <td><input name={'type'} value={`${type}`} onChange={onChange} /></td>
-                <td>
-                  <select name={'mandatory'} value={`${mandatory}`} onChange={onChange}>
-                    <option>{`${true}`}</option>
-                    <option>{`${false}`}</option>
-                  </select>
-                  </td>
-                <td><input name={'constraint'} value={`${onCheckNull(constraint)}`} onChange={onChange} /></td> */}
-
                 <td><SuperInput name={'name'} value={`${name}`} onChange={onChange} /></td>
                 <td><SuperInput name={'title'} value={`${title}`} onChange={onChange} /></td>
                 <td><SuperInput name={'type'} value={`${type}`} onChange={onChange} options={['string', 'boolean']} /></td>
